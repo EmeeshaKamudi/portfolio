@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emeesha Kamudi — Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#141A1F',
+                            card: '#1A232B',
+                            cardHover: '#1F2A34',
+                            green: '#00DF89',
+                            greenHover: '#00c377',
+                            muted: '#94A3B8',
+                            border: '#24323D',
+                            borderHover: '#334656'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-green selection:text-black">
+
+    <!-- Fixed Navbar -->
+    <header class="fixed top-0 w-full z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            
+            <!-- Screenshot maadiri Profile Image & Name -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-full overflow-hidden border-2 border-brand-green/60 shadow-md flex-shrink-0 group-hover:border-brand-green transition">
+                    <img src="profile.jpg" alt="Emeesha Kamudi" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-base font-bold text-white tracking-wide group-hover:text-brand-green transition leading-tight">Emeesha Kamudi</span>
+                    <span class="text-xs text-brand-muted font-medium">Aspiring Business Analyst / Developer</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#home" class="text-brand-green font-semibold">Home</a>
+                <a href="#about" class="text-slate-300 hover:text-brand-green transition">About</a>
+                <a href="#education" class="text-slate-300 hover:text-brand-green transition">Education</a>
+                <a href="#skills" class="text-slate-300 hover:text-brand-green transition">Skills</a>
+                <a href="#projects" class="text-slate-300 hover:text-brand-green transition">Projects</a>
+                <a href="#contact" class="text-slate-300 hover:text-brand-green transition">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="https://github.com/EmeeshaKamudi" target="_blank" class="hidden sm:inline-block px-4 py-2 rounded-lg bg-brand-card border border-brand-border text-slate-200 text-xs font-semibold hover:border-brand-green transition">
+                    GitHub
+                </a>
+                <a href="#contact" class="px-5 py-2 rounded-lg bg-brand-green text-black font-bold text-xs uppercase tracking-wider hover:bg-brand-greenHover transition shadow-md shadow-brand-green/20">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pt-28">
+
+        <!-- Hero Section -->
+        <section id="home" class="py-16 md:py-24 flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+            
+            <!-- Left Info -->
+            <div class="lg:w-3/5 space-y-5">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-green/10 border border-brand-green/30 text-brand-green text-xs font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-brand-green animate-pulse"></span>
+                    Open to Internships: BA | SE | QA | Data Analyst | Developer
+                </div>
+
+                <div class="text-xl md:text-2xl font-light text-slate-300">
+                    Hello, <span class="text-brand-green font-semibold">I'm</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-brand-green tracking-tight leading-tight">
+                    Emeesha Kamudi
+                </h1>
+
+                <h2 class="text-xl sm:text-2xl font-semibold text-white">
+                    Aspiring Business Analyst & Software Enthusiast
+                </h2>
+
+                <p class="text-brand-muted text-base leading-relaxed max-w-xl font-light">
+                    Driven Computing undergraduate passionate about business analysis, software engineering, quality assurance, and data-driven insights. Adaptable and eager to bring value across tech and analysis roles based on upcoming internship opportunities.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap items-center gap-4 pt-3">
+                    <a href="#projects" class="px-7 py-3 rounded-xl bg-brand-green text-black font-bold text-sm hover:bg-brand-greenHover transition shadow-lg shadow-brand-green/20 flex items-center gap-2">
+                        Explore Projects <span>→</span>
+                    </a>
+                    <a href="https://github.com/EmeeshaKamudi" target="_blank" class="px-6 py-3 rounded-xl bg-brand-card border border-brand-border text-slate-200 font-semibold text-sm hover:border-brand-green transition">
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/EmeeshaGunawardhana" target="_blank" class="px-6 py-3 rounded-xl bg-brand-card border border-brand-border text-slate-200 font-semibold text-sm hover:border-brand-green transition">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Profile Image -->
+            <div class="lg:w-2/5 flex justify-center">
+                <div class="relative w-72 h-80 sm:w-80 sm:h-96 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-brand-green rounded-3xl rotate-3 opacity-90"></div>
+                    
+                    <div class="relative w-full h-full bg-brand-card rounded-3xl overflow-hidden border-2 border-brand-green/60 shadow-2xl flex items-end justify-center group">
+                        <!-- Profile Image: Normal color initially, grayscale on hover -->
+                        <img src="profile.jpg" alt="Emeesha Kamudi" class="w-full h-full object-cover transition duration-300 group-hover:grayscale group-hover:contrast-125" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'">
+                        <div class="absolute bottom-4 px-4 py-1.5 rounded-full bg-brand-dark/90 backdrop-blur-md border border-brand-border text-xs font-semibold text-slate-200 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                            Computing Undergraduate
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 border-t border-brand-border">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs uppercase tracking-widest text-brand-green font-bold">About Me</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Analytical Thinker & Adaptive Technologist</h2>
+                <p class="text-brand-muted text-sm mt-3">Bridging business needs with technical software solutions, data modeling, and reliable quality assurance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <div class="lg:col-span-7 bg-brand-card p-8 rounded-2xl border border-brand-border space-y-4 text-brand-muted text-sm leading-relaxed">
+                    <p>
+                        Hello! I am <span class="text-white font-semibold">Emeesha Kamudi Gunawardhana</span>, an undergraduate student pursuing my BSc (Hons) in Computing at Coventry University, UK (affiliated with NIBM).
+                    </p>
+                    <p>
+                        My ultimate career goal is to excel as a <span class="text-brand-green font-semibold">Business Analyst</span>, translating complex organizational requirements into scalable technical roadmaps. At the same time, I possess a versatile skillset ready for roles in <span class="text-white font-medium">Software Engineering, Quality Assurance (QA), Data Analysis (DA), or Full-Stack Development</span>.
+                    </p>
+                    <p>
+                        I love analyzing workflows, understanding user problems, testing systems for optimal reliability, and writing clean, structured code. My career path is driven by continuous learning and adaptability to industry demands.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-green transition text-center">
+                        <div class="w-10 h-10 mx-auto rounded-xl bg-brand-green/10 text-brand-green flex items-center justify-center font-bold text-lg mb-3">📁</div>
+                        <h4 class="text-2xl font-bold text-white">8+</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">Featured Projects</p>
+                    </div>
+
+                    <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-green transition text-center">
+                        <div class="w-10 h-10 mx-auto rounded-xl bg-brand-green/10 text-brand-green flex items-center justify-center font-bold text-lg mb-3">&lt;/&gt;</div>
+                        <h4 class="text-2xl font-bold text-white">12+</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">Tech & Tools</p>
+                    </div>
+
+                    <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-green transition text-center">
+                        <div class="w-10 h-10 mx-auto rounded-xl bg-brand-green/10 text-brand-green flex items-center justify-center font-bold text-lg mb-3">🎯</div>
+                        <h4 class="text-base font-bold text-white">BA / Tech</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">Target Pathways</p>
+                    </div>
+
+                    <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-green transition text-center">
+                        <div class="w-10 h-10 mx-auto rounded-xl bg-brand-green/10 text-brand-green flex items-center justify-center font-bold text-lg mb-3">📍</div>
+                        <h4 class="text-base font-bold text-white">Galle</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">Sri Lanka</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20 border-t border-brand-border">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs uppercase tracking-widest text-brand-green font-bold">Academic Background</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Education & Qualifications</h2>
+                <p class="text-brand-muted text-sm mt-3">My educational milestones spanning higher computing studies and foundational school education.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- University -->
+                <div class="bg-brand-card p-7 rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between">
+                    <div>
+                        <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase bg-brand-green/10 text-brand-green border border-brand-green/20">Ongoing</span>
+                        <h3 class="text-lg font-bold text-white mt-4">BSc (Hons) in Computing</h3>
+                        <p class="text-xs font-semibold text-slate-300 mt-1">Coventry University, UK (Affiliated by NIBM)</p>
+                        <p class="text-xs text-brand-green mt-1 font-mono">2025 – Present | Undergraduate</p>
+                        <p class="text-xs text-brand-muted mt-3 leading-relaxed">
+                            Developing core competencies in business analysis, software architecture, data warehousing, and system design.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 mt-5 pt-3 border-t border-brand-border">
+                        <span class="px-2 py-0.5 rounded text-[11px] bg-brand-dark text-slate-300">Software Eng</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] bg-brand-dark text-slate-300">Database Systems</span>
+                    </div>
+                </div>
+
+                <!-- Diploma -->
+                <div class="bg-brand-card p-7 rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between">
+                    <div>
+                        <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase bg-brand-green/10 text-brand-green border border-brand-green/20">Completed</span>
+                        <h3 class="text-lg font-bold text-white mt-4">Level 3 Diploma in IT</h3>
+                        <p class="text-xs font-semibold text-slate-300 mt-1">Esoft Metro Campus</p>
+                        <p class="text-xs text-brand-green mt-1 font-mono">Skills & Education Group Awards, UK • 2024</p>
+                        <p class="text-xs text-brand-muted mt-3 leading-relaxed">
+                            Comprehensive training in information systems, logic development, software workflows, and computing foundations.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 mt-5 pt-3 border-t border-brand-border">
+                        <span class="px-2 py-0.5 rounded text-[11px] bg-brand-dark text-slate-300">IT Fundamentals</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] bg-brand-dark text-slate-300">UK Accredited</span>
+                    </div>
+                </div>
+
+                <!-- School Education -->
+                <div class="bg-brand-card p-7 rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between">
+                    <div>
+                        <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase bg-brand-green/10 text-brand-green border border-brand-green/20">Completed</span>
+                        <h3 class="text-lg font-bold text-white mt-4">Secondary School Education</h3>
+                        <p class="text-xs font-semibold text-slate-300 mt-1">G/Meepawala Amarasuriya National Colloege</p>
+                        <p class="text-xs text-brand-green mt-1 font-mono">Galle, Sri Lanka</p>
+                        <p class="text-xs text-brand-muted mt-3 leading-relaxed">
+                            Completed foundational academic curriculum, developing strong analytical thinking, mathematics, language, and extracurricular communication skills.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 mt-5 pt-3 border-t border-brand-border">
+                        <span class="px-2 py-0.5 rounded text-[11px] bg-brand-dark text-slate-300">School Education</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] bg-brand-dark text-slate-300">Academic Foundation</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical & Business Skills Section -->
+        <section id="skills" class="py-20 border-t border-brand-border">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs uppercase tracking-widest text-brand-green font-bold">Skills & Proficiencies</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Areas of Competence</h2>
+                <p class="text-brand-muted text-sm mt-3">Combining business acumen, software quality evaluation, analytics, and development tools.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-green transition">
+                    <div class="text-brand-green text-sm font-bold uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <span>📊</span> BA & QA Focus
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Requirement Analysis</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Business Process Modeling</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Quality Assurance & Testing</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Test Case Documentation</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Agile & Scrum Methodologies</li>
+                    </ul>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-green transition">
+                    <div class="text-brand-green text-sm font-bold uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <span>&lt;/&gt;</span> Programming
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Java & Python</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> C# & C++</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> PHP & JavaScript</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Object-Oriented Principles</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-green transition">
+                    <div class="text-brand-green text-sm font-bold uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <span>🌐</span> Web & Systems
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> HTML5 & CSS3</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Tailwind CSS & Bootstrap</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Responsive UI Design</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> RESTful Web APIs</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Git & GitHub Workflow</li>
+                    </ul>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-green transition">
+                    <div class="text-brand-green text-sm font-bold uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <span>🗄️</span> Data & Analytics
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> PostgreSQL & MySQL</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Star Schema Data Modeling</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Metabase & BI Reporting</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Data Analysis (Pandas, NumPy)</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Machine Learning Basics</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section (Responsive Aspect Ratio + Green Buttons) -->
+        <section id="projects" class="py-20 border-t border-brand-border">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs uppercase tracking-widest text-brand-green font-bold">Portfolio Showcase</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Featured Projects</h2>
+                <p class="text-brand-muted text-sm mt-3">Projects demonstrating my technical execution across data analytics, full-stack systems, algorithms, and hardware integration.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1: MoneyMate -->
+                <div class="bg-brand-card rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between overflow-hidden shadow-lg">
+                    <div>
+                        <div class="w-full aspect-video bg-[#0f1418] border-b border-brand-border flex items-center justify-center p-2 overflow-hidden">
+                            <img src="1.png" alt="MoneyMate" class="w-full h-full object-contain hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-brand-green/10 text-brand-green border border-brand-green/20">FinTech & Budgeting</span>
+                            <h3 class="text-xl font-bold text-white mt-3">MoneyMate</h3>
+                            <p class="text-xs text-brand-muted mt-2 leading-relaxed">
+                                A finance application designed to help users budget efficiently, track long-term savings goals, store warranty details, and organize personal accounts.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>• Budget & Expense category monitoring</li>
+                                <li>• Savings goal progress with milestone targets</li>
+                                <li>• Digital warranty card storage & expiry alerts</li>
+                                <li>• Real-time cloud database synchronization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="p-2.5 bg-brand-dark rounded-xl text-[11px] text-brand-green font-mono mb-4 border border-brand-border">
+                            Java • Database Architecture • Cloud Sync
+                        </div>
+                        <a href="https://github.com/Lakshan-star-sudo/Moneymate" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-green text-black text-xs font-bold flex items-center justify-center gap-2 hover:bg-brand-greenHover transition shadow-md shadow-brand-green/20">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Supermarket Predictor -->
+                <div class="bg-brand-card rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between overflow-hidden shadow-lg">
+                    <div>
+                        <div class="w-full aspect-video bg-[#0f1418] border-b border-brand-border flex items-center justify-center p-2 overflow-hidden">
+                            <img src="2.png" alt="Supermarket Predictor" class="w-full h-full object-contain hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-brand-green/10 text-brand-green border border-brand-green/20">Analytics & ML Modeling</span>
+                            <h3 class="text-xl font-bold text-white mt-3">Supermarket Predictor</h3>
+                            <p class="text-xs text-brand-muted mt-2 leading-relaxed">
+                                An end-to-end predictive modeling system forecasting optimal store choices based on consumer demographics, monthly budgets, and shopping habits.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>• Data preprocessing, exploratory data analysis & EDA</li>
+                                <li>• Benchmarking Decision Tree, KNN & classification algorithms</li>
+                                <li>• Habit-driven store prediction on consumer profiles</li>
+                                <li>• Predictive business reporting and analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="p-2.5 bg-brand-dark rounded-xl text-[11px] text-brand-green font-mono mb-4 border border-brand-border">
+                            Python • Scikit-Learn • Pandas • NumPy • Analytics
+                        </div>
+                        <a href="https://github.com/EmeeshaKamudi" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-green text-black text-xs font-bold flex items-center justify-center gap-2 hover:bg-brand-greenHover transition shadow-md shadow-brand-green/20">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Library Management System -->
+                <div class="bg-brand-card rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between overflow-hidden shadow-lg">
+                    <div>
+                        <div class="w-full aspect-video bg-[#0f1418] border-b border-brand-border flex items-center justify-center p-2 overflow-hidden">
+                            <img src="3.png" alt="Library Management System" class="w-full h-full object-contain hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-brand-green/10 text-brand-green border border-brand-green/20">Algorithms & Architecture</span>
+                            <h3 class="text-xl font-bold text-white mt-3">Library Management System</h3>
+                            <p class="text-xs text-brand-muted mt-2 leading-relaxed">
+                                A desktop application streamlining library catalogs, demonstrating custom algorithmic data structures, access control, and OOP principles.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>• Binary Search Tree (BST) for fast search operations</li>
+                                <li>• Role-based privilege levels for patrons & administration</li>
+                                <li>• Structured catalog records and user account tracking</li>
+                                <li>• Modular Object-Oriented software design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="p-2.5 bg-brand-dark rounded-xl text-[11px] text-brand-green font-mono mb-4 border border-brand-border">
+                            Java • Data Structures (BST) • OOP Architecture
+                        </div>
+                        <a href="https://github.com/Lakshan-star-sudo/Smart-Library-Book-Management-System" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-green text-black text-xs font-bold flex items-center justify-center gap-2 hover:bg-brand-greenHover transition shadow-md shadow-brand-green/20">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: ServiceHub -->
+                <div class="bg-brand-card rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between overflow-hidden shadow-lg">
+                    <div>
+                        <div class="w-full aspect-video bg-[#0f1418] border-b border-brand-border flex items-center justify-center p-2 overflow-hidden">
+                            <img src="4.png" alt="ServiceHub" class="w-full h-full object-contain hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-brand-green/10 text-brand-green border border-brand-green/20">Web Platform & Marketplace</span>
+                            <h3 class="text-xl font-bold text-white mt-3">ServiceHub</h3>
+                            <p class="text-xs text-brand-muted mt-2 leading-relaxed">
+                                A modern marketplace platform connecting local skilled technicians and service professionals with clients needing prompt services.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>• Dual-sided workflow for consumers & technicians</li>
+                                <li>• Category browsing, filter channels & direct booking</li>
+                                <li>• Status tracking for ongoing service requests</li>
+                                <li>• Clean and responsive user interface</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="p-2.5 bg-brand-dark rounded-xl text-[11px] text-brand-green font-mono mb-4 border border-brand-border">
+                            Full-Stack Web • UI/UX • Marketplace Logic
+                        </div>
+                        <a href="https://github.com/EmeeshaKamudi/Service_Hub" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-green text-black text-xs font-bold flex items-center justify-center gap-2 hover:bg-brand-greenHover transition shadow-md shadow-brand-green/20">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: FlavorFly -->
+                <div class="bg-brand-card rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between overflow-hidden shadow-lg">
+                    <div>
+                        <div class="w-full aspect-video bg-[#0f1418] border-b border-brand-border flex items-center justify-center p-2 overflow-hidden">
+                            <img src="5.png" alt="FlavorFly" class="w-full h-full object-contain hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-brand-green/10 text-brand-green border border-brand-green/20">Full-Stack Delivery System</span>
+                            <h3 class="text-xl font-bold text-white mt-3">FlavorFly</h3>
+                            <p class="text-xs text-brand-muted mt-2 leading-relaxed">
+                                A dynamic food ordering and logistics management web ecosystem connecting patrons with culinary kitchens through real-time ordering pipelines.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>• Multi-user ecosystem for clients and store admins</li>
+                                <li>• Dynamic cart, order customization and checkout</li>
+                                <li>• Backend order lifecycle tracking</li>
+                                <li>• Relational database management with MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="p-2.5 bg-brand-dark rounded-xl text-[11px] text-brand-green font-mono mb-4 border border-brand-border">
+                            PHP • MySQL • Bootstrap • JavaScript
+                        </div>
+                        <a href="https://github.com/EmeeshaKamudi/FlavorFly_FoodDelevery_System" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-green text-black text-xs font-bold flex items-center justify-center gap-2 hover:bg-brand-greenHover transition shadow-md shadow-brand-green/20">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6: Intelligent Shoe Drying Machine -->
+                <div class="bg-brand-card rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between overflow-hidden shadow-lg">
+                    <div>
+                        <div class="w-full aspect-video bg-[#0f1418] border-b border-brand-border flex items-center justify-center p-2 overflow-hidden">
+                            <img src="6.png" alt="Intelligent Shoe Drying Machine" class="w-full h-full object-contain hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-brand-green/10 text-brand-green border border-brand-green/20">Embedded Systems & Hardware</span>
+                            <h3 class="text-xl font-bold text-white mt-3">Shoe Drying & Odor Box</h3>
+                            <p class="text-xs text-brand-muted mt-2 leading-relaxed">
+                                An automated hardware solution with thermal regulation designed to safely dry footwear while mitigating moisture and bacterial odors.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-slate-300 text-xs">
+                                <li>• Closed-loop temperature and moisture sensors</li>
+                                <li>• Automated relay actuation for heaters and fans</li>
+                                <li>• Safety thresholds protecting delicate shoe materials</li>
+                                <li>• Embedded microcontroller programming</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="p-2.5 bg-brand-dark rounded-xl text-[11px] text-brand-green font-mono mb-4 border border-brand-border">
+                            Arduino • Sensor Networks • Relays • C/C++
+                        </div>
+                        <a href="https://github.com/EmeeshaKamudi/ShoeDryingandOdorRemovelBox" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-green text-black text-xs font-bold flex items-center justify-center gap-2 hover:bg-brand-greenHover transition shadow-md shadow-brand-green/20">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 7: Lotus Care Clinics -->
+                <div class="bg-brand-card rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between overflow-hidden shadow-lg">
+                    <div>
+                        <div class="w-full aspect-video bg-[#0f1418] border-b border-brand-border flex items-center justify-center p-2 overflow-hidden">
+                            <img src="7.png" alt="Lotus Care Outpatient Clinics" class="w-full h-full object-contain hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-brand-green/10 text-brand-green border border-brand-green/20">Data Warehousing & BI</span>
+                            <h3 class="text-xl font-bold text-white mt-3">Lotus Care Clinics BI</h3>
+                            <p class="text-xs text-brand-muted mt-2 leading-relaxed">
+                                A dimensional data warehouse and business intelligence pipeline analyzing outpatient consultations across 5 regional healthcare clinics.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>• Automated Python ETL extracting & cleaning clinical CSVs</li>
+                                <li>• PostgreSQL Star Schema design with fact tables</li>
+                                <li>• Analytical SQL identifying clinic operational bottlenecks</li>
+                                <li>• Metabase interactive dashboards tracking key metrics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="p-2.5 bg-brand-dark rounded-xl text-[11px] text-brand-green font-mono mb-4 border border-brand-border">
+                            Python • ETL • PostgreSQL • Star Schema • Metabase
+                        </div>
+                        <a href="https://github.com/EmeeshaKamudi/DWBI-Coursework-C" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-green text-black text-xs font-bold flex items-center justify-center gap-2 hover:bg-brand-greenHover transition shadow-md shadow-brand-green/20">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 8: Smart Hot Water System -->
+                <div class="bg-brand-card rounded-2xl border border-brand-border hover:border-brand-green transition flex flex-col justify-between overflow-hidden shadow-lg">
+                    <div>
+                        <div class="w-full aspect-video bg-[#0f1418] border-b border-brand-border flex items-center justify-center p-2 overflow-hidden">
+                            <img src="8.png" alt="Smart Hot Water System" class="w-full h-full object-contain hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-brand-green/10 text-brand-green border border-brand-green/20">IoT & Home Automation</span>
+                            <h3 class="text-xl font-bold text-white mt-3">Smart Hot Water System</h3>
+                            <p class="text-xs text-brand-muted mt-2 leading-relaxed">
+                                An IoT-driven energy conservation system converting domestic water heating into an automated, remotely monitored smart appliance.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>• ESP8266 controller streaming real-time metrics to Cloud</li>
+                                <li>• Waterproof thermal probe for accurate temperature checks</li>
+                                <li>• Automated temperature maintenance & threshold limits</li>
+                                <li>• Energy efficiency alerts and overheat safeguards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="p-2.5 bg-brand-dark rounded-xl text-[11px] text-brand-green font-mono mb-4 border border-brand-border">
+                            ESP8266 • DS18B20 • Cloud IoT • Embedded C++
+                        </div>
+                        <a href="https://github.com/EmeeshaKamudi/SmartHotWaterMachine" target="_blank" class="w-full py-2.5 rounded-xl bg-brand-green text-black text-xs font-bold flex items-center justify-center gap-2 hover:bg-brand-greenHover transition shadow-md shadow-brand-green/20">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 border-t border-brand-border">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs uppercase tracking-widest text-brand-green font-bold">Get In Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Let's Connect</h2>
+                <p class="text-brand-muted text-sm mt-3">Interested in discussing an internship role, collaborative project, or entry-level opportunity? Reach out directly.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left: Channels -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="p-4 rounded-xl bg-brand-green/10 border border-brand-green/30 flex items-center gap-3">
+                        <span class="w-3 h-3 rounded-full bg-brand-green animate-pulse"></span>
+                        <div>
+                            <h4 class="text-xs font-bold text-brand-green">Open to Internship Roles</h4>
+                            <p class="text-xs text-slate-300">BA | SE | QA | Data Analyst | Developer</p>
+                        </div>
+                    </div>
+
+                    <a href="mailto:emeesha7@gmail.com" class="bg-brand-card p-5 rounded-xl border border-brand-border hover:border-brand-green transition flex items-center gap-4 block">
+                        <div class="w-10 h-10 rounded-lg bg-brand-dark border border-brand-border text-brand-green flex items-center justify-center font-bold">✉️</div>
+                        <div>
+                            <span class="text-[10px] text-brand-muted tracking-wider uppercase font-semibold">EMAIL</span>
+                            <p class="text-sm font-bold text-white">emeesha7@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/EmeeshaKamudi" target="_blank" class="bg-brand-card p-5 rounded-xl border border-brand-border hover:border-brand-green transition flex items-center gap-4 block">
+                        <div class="w-10 h-10 rounded-lg bg-brand-dark border border-brand-border text-brand-green flex items-center justify-center font-bold">🐙</div>
+                        <div>
+                            <span class="text-[10px] text-brand-muted tracking-wider uppercase font-semibold">GITHUB</span>
+                            <p class="text-sm font-bold text-white">github.com/EmeeshaKamudi</p>
+                        </div>
+                    </a>
+
+                    <a href="https://linkedin.com/in/EmeeshaGunawardhana" target="_blank" class="bg-brand-card p-5 rounded-xl border border-brand-border hover:border-brand-green transition flex items-center gap-4 block">
+                        <div class="w-10 h-10 rounded-lg bg-brand-dark border border-brand-border text-brand-green flex items-center justify-center font-bold">💼</div>
+                        <div>
+                            <span class="text-[10px] text-brand-muted tracking-wider uppercase font-semibold">LINKEDIN</span>
+                            <p class="text-sm font-bold text-white">linkedin.com/in/EmeeshaGunawardhana</p>
+                        </div>
+                    </a>
+
+                    <div class="bg-brand-card p-5 rounded-xl border border-brand-border flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-brand-dark border border-brand-border text-brand-green flex items-center justify-center font-bold">📍</div>
+                        <div>
+                            <span class="text-[10px] text-brand-muted tracking-wider uppercase font-semibold">LOCATION</span>
+                            <p class="text-sm font-bold text-white">Poddala, Galle, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Message Form with EmailJS -->
+                <div class="lg:col-span-7 bg-brand-card p-8 rounded-2xl border border-brand-border">
+                    <h3 class="text-xl font-bold text-white mb-2">Send a Message</h3>
+                    <p class="text-xs text-brand-muted mb-6">Let's discuss how my analytical skills and dedication can support your team.</p>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Name</label>
+                                <input type="text" name="from_name" required placeholder="John Doe" class="w-full px-4 py-2.5 rounded-xl bg-brand-dark border border-brand-border text-sm text-white focus:outline-none focus:border-brand-green">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Email</label>
+                                <input type="email" name="from_email" required placeholder="john@example.com" class="w-full px-4 py-2.5 rounded-xl bg-brand-dark border border-brand-border text-sm text-white focus:outline-none focus:border-brand-green">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Subject</label>
+                            <input type="text" name="subject" required placeholder="Internship / Role Inquiry" class="w-full px-4 py-2.5 rounded-xl bg-brand-dark border border-brand-border text-sm text-white focus:outline-none focus:border-brand-green">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Message</label>
+                            <textarea name="message" rows="4" required placeholder="Hello Emeesha, I would like to discuss..." class="w-full px-4 py-2.5 rounded-xl bg-brand-dark border border-brand-border text-sm text-white focus:outline-none focus:border-brand-green"></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="w-full py-3 rounded-xl bg-brand-green text-black font-bold text-sm hover:bg-brand-greenHover transition shadow-lg shadow-brand-green/20">
+                            Send Message
+                        </button>
+                        <p id="form-status" class="text-xs text-center font-medium mt-2 hidden"></p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-brand-border text-center text-xs text-brand-muted">
+        © 2026 Emeesha Kamudi Gunawardhana. All rights reserved.
+    </footer>
+
+    <!-- EmailJS SDK Integration -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("ReSuTQiVrwaBv7u19");
+        })();
+
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const statusText = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Sending...';
+            statusText.classList.remove('hidden');
+            statusText.className = 'text-xs text-center font-medium mt-2 text-slate-400';
+            statusText.innerText = 'Sending your message...';
+
+            emailjs.sendForm('service_1sdcvla', 'template_5xjgjux', this)
+                .then(function() {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = 'Send Message';
+                    statusText.className = 'text-xs text-center font-medium mt-2 text-brand-green';
+                    statusText.innerText = 'Message sent successfully! I will reply soon.';
+                    contactForm.reset();
+                }, function(error) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = 'Send Message';
+                    statusText.className = 'text-xs text-center font-medium mt-2 text-red-400';
+                    statusText.innerText = 'Failed to send message. Please try again.';
+                    console.error('EmailJS Error:', error);
+                });
+        });
+    </script>
+</body>
+</html>
